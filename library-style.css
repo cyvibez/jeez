@@ -3,9 +3,18 @@
     padding: 0;
     font-family: sans-serif;
 }
+:root {
+    --primary-color: white;
+    --secondary-color: black; 
+}
+
+.dark-theme {
+    --primary-color: black;
+    --secondary-color: white ; 
+}
 
 body {
-    background-color: white;
+    background-color: var(--primary-color);
     width: 100%;
 }
 
@@ -26,10 +35,10 @@ body {
 .img-container img {
     width: 100%;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }
 .img-container img:hover {
-    transform: scale(0.85) rotate(15deg);
+    transform: scale(0.9) rotate(8deg);
     border-radius: 20px;
     /* box-shadow: 0 32px 75px rgba(68, 77, 136, 0.5); */
     box-shadow: 0 32px 75px rgba(68, 77, 136, 0.4);
@@ -71,7 +80,7 @@ body {
 }
 .header h1 {
     font-size: 100px;
-    color: black;
+    color: var(--secondary-color);
     font-family: 'Pacifico', cursive;
 }
 .header h1::after {
@@ -90,6 +99,7 @@ body {
     position: absolute;
     top: 3%;
     right: 5%;
+    cursor: pointer;
 }
 
 /* footer  */
@@ -97,13 +107,14 @@ body {
 .footer {
     text-align: center;
     margin: 15px 0;
+    border-top: 1.5px solid;
+    border-color: var(--secondary-color);
 }
-.footer hr {
-    border-top: 1.5px solid black;
-}
+
 .footer p {
     margin: 15px 0;
     font-size: 14px;
+    color: rgb(66, 123, 127);
 }
 .footer p a {
     text-decoration: none;
@@ -113,5 +124,9 @@ body {
 .footer p a:hover {
     font-size: 15px;
     color: rgb(178, 50, 50);
+}
+
+@media screen and (max-width: 
+    
 }
 
