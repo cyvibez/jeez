@@ -13,6 +13,11 @@
     --secondary-color: white ; 
 }
 
+/* .light-theme {
+    --primary-color: white;
+    --secondary-color: black ; 
+} */
+
 body {
     background-color: var(--primary-color);
     width: 100%;
@@ -100,6 +105,9 @@ body {
     top: 3%;
     right: 5%;
     cursor: pointer;
+}
+#icon2 {
+    display: none;
 }
 
 /* footer  */
